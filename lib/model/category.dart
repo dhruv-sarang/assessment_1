@@ -10,7 +10,7 @@ class Category {
 
   Category.withId({this.id, required this.CategoryName});
 
-  factory Category.fromJson(Map<String, dynamic> json) {
+  factory Category.fromMap(Map<String, dynamic> json) {
     return Category.withId(
       id: json['cid'] as int,
       CategoryName: json['CategoryName'] as String? ?? '',

@@ -88,7 +88,7 @@ class DbHelper {
     print(maps);
 
     if (maps.isNotEmpty) {
-      categoryList = maps.map((map) => Category.fromJson(map)).toList();
+      categoryList = maps.map((map) => Category.fromMap(map)).toList();
     }
 
     return categoryList;

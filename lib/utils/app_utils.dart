@@ -12,7 +12,7 @@ class AppUtil {
     }
   }
 
-  static String? isValidPassword(String password) {
+  static String? isValidPassword(String password)  {
     RegExp passwordRegex = RegExp(
         r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9])(?!.*\s).{8,16}$');
 
